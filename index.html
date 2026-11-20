@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberSafe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">CYBER<span>SAFE.</span></a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="formulaire.html"> Security Check</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="tag">YOUR DIGITAL SAFETY MATTERS</span>
+        <h1>
+          Stay safe. <br />
+          <span>Stay aware.</span>
+        </h1>
+        <p class="hero-description">
+          The internet is full of opportunities, but also risks. Learn how to
+          protect your identity, your data and your digital life.
+        </p>
+        <a href="#tips" class="hero-btn btn">Explore security tips</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/security.jpg" alt="Digital cybersecurity protection" />
+      </div>
+    </section>
+
+    <!-- introduction section -->
+    <section class="introduction">
+      <span class="tag">WHY CYBERSECURITY?</span>
+      <h2>Your information is <span>valuable.</span></h2>
+      <p>
+        Every day, we share personal information online. Simple habits can make
+        a big difference in protecting ourselves against digital threats.
+      </p>
+    </section>
+
+    <!-- secrity tips section -->
+    <section class="tips-section" id="tips">
+      <div class="section-heading">
+        <div>
+          <span class="tag">LEARN THE BASICS</span>
+          <h2>Protect yourself <span>online.</span></h2>
+        </div>
+      </div>
+      <!-- search bar -->
+      <div class="search-area">
+        <form action="#">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search a security topic..."
+          />
+          <button id="searchButton">Search</button>
+        </form>
+      </div>
+      <p id="searchCount">5 security tips available</p>
+      <!-- tips -->
+      <div class="tips-grid" id="tipsContainer">
+        <article class="tip-card">
+          <span class="tip-number">01</span>
+          <h3>Strong passwords</h3>
+          <p>
+            Use long and unique passwords for your accounts. Avoid using the
+            same password everywhere.
+          </p>
+        </article>
+        <article class="tip-card">
+          <span class="tip-number">02</span>
+          <h3>Beware of phishing</h3>
+          <p>
+            Never click suspicious links. Always verify the sender before
+            opening an email.
+          </p>
+        </article>
+        <article class="tip-card">
+          <span class="tip-number">03</span>
+          <h3>Protect your privacy</h3>
+          <p>
+            Think before sharing personal information on social media and other
+            websites.
+          </p>
+        </article>
+        <article class="tip-card">
+          <span class="tip-number">04</span>
+          <h3>Update your devices</h3>
+          <p>
+            Keep your applications and operating system updated to improve your
+            security.
+          </p>
+        </article>
+        <article class="tip-card">
+          <span class="tip-number">05</span>
+          <h3>Secure your Wi-Fi</h3>
+          <p>
+            Use a strong Wi-Fi password and be careful when connecting to public
+            networks.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- image section for cyber sec -->
+    <section class="image-section">
+      <div class="image-content">
+        <span class="tag">THINK BEFORE YOU CLICK</span>
+        <h2>Not everything online is <span>what it seems.</span></h2>
+        <p>
+          Suspicious messages, fake websites and unknown downloads can put your
+          personal information at risk. Stay alert and make informed decisions.
+        </p>
+      </div>
+      <img src="images/phishing.jpg" alt="Cybersecurity phishing awareness" />
+    </section>
+
+    <!-- add tips section -->
+    <!-- delete section really unless for the form purpose it doesn't really stay unless if i add a bit of back check before  -->
+    <section class="add-section">
+      <span class="tag">SHARE YOUR KNOWLEDGE</span>
+      <h2>Add a security <span>tip.</span></h2>
+      <p>Have another useful cybersecurity tip? Add it to our collection.</p>
+      <div class="add-form">
+        <form action="#">
+          <input type="text" id="newTitle" placeholder="Tip title" />
+          <textarea
+            id="newContent"
+            placeholder="Write your security tip.."
+          ></textarea>
+          <button id="addButton" class="btn">+ Add my tip</button>
+          <p id="addMessage"></p>
+        </form>
+      </div>
+    </section>
+    </main>
+    <footer>
+    <a href="index.html" class="logo">CYBER<span>SAFE.</span></a>
+    <p>Stay informed. Stay protected.</p>
+    <!-- just to flex -->
+    <p id="currentDate"></p> 
+    <div class="footer-bottom">
+      <p>&copy; 2026 CyberSafe. All rights reserved.</p>
+      <a class="github" href="https://github.com/lena-bel" target="_blank"
+        >my github</a
+      >
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSafe</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+     <!-- navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">CYBER<span>SAFE.</span></a>
+        <div class="nav-links">
+          <a href="index.html" >Home</a>
+          <a href="formulaire.html" class="active"> Security Check</a>
+        </div>
+      </nav>
+    </header>
+    <main class="form-page container">
+        <div class="section-heading">
+            <span class="digital-profile">YOUR DIGITAL PROFILE</span>
+            <h1>Let's talk about your <span class="gradient-text">online safety.</span></h1>
+            <p>Complete this form to share your digital habits and discover how aware you are of cybersecurity.</p>
+        </div>
+        <form action="#" id="cyberForm" class="cyber-form">
+            <div class="form-section-title">
+                <span>01</span>
+                <div>
+                    <h2>Personal information</h2>
+                    <p>Tell us a little about yourself.</p>
+                </div>
+            </div>
+             <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="name">Full name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="text" id="email" name="email" placeholder="example@email.com">
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Create a password *</label>
+                    <input type="password" id="password" name="password" placeholder="Minimum 8 characters">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Date of birth</label>
+                    <input type="text" id="birthdate" name="birthdate">
+                    <small class="error-message"></small>
+                </div>
+
+            </div>
+            <div class="form-section-title">
+                <span>02</span>
+                <div>
+                    <h2>Your digital habits</h2>
+                    <p>Let's understand how you use technology.</p>
+                </div>
+            </div>
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="device">Your main device *</label>
+                    <select id="device" name="device">
+                        <option value="">Choose a device</option>
+                        <option value="computer">Computer</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="tablet">Tablet</option>
+                    </select>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="deviceType">Device model *</label>
+                    <select id="deviceType" name="deviceType" disabled>
+                        <option value="">Select a device first</option>
+                    </select>
+                    <small class="error-message"></small>
+                </div>
+
+            </div>
+             <div class="form-group">
+                <label>Your operating system *</label>
+
+                <div class="radio-group">
+                    <label><input type="radio" name="os" value="Windows"> Windows</label>
+                    <label><input type="radio" name="os" value="macOS"> macOS</label>
+                    <label><input type="radio" name="os" value="Linux"> Linux</label>
+                    <label><input type="radio" name="os" value="Android"> Android</label>
+                    <label><input type="radio" name="os" value="iOS"> iOS</label>
+                </div>
+
+                <small class="error-message" id="osError"></small>
+            </div>
+            <div class="form-group">
+                <label>Which security habits do you practise?</label>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="habits" value="Strong passwords"> Strong passwords</label>
+                    <label><input type="checkbox" name="habits" value="Two-factor authentication"> Two-factor authentication</label>
+                    <label><input type="checkbox" name="habits" value="Software updates"> Regular software updates</label>
+                    <label><input type="checkbox" name="habits" value="Antivirus"> Antivirus protection</label>
+                </div>
+            </div>
+             <div class="form-group">
+                <label for="experience">How confident are you about online security?</label>
+
+                <select id="experience" name="experience">
+                    <option value="">Choose an answer</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Any additional comments?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Share your thoughts..."></textarea>
+            </div>
+            <div class="form-group consent-group">
+                <label>
+                    <input type="checkbox" id="consent">
+                    I agree to the educational use of this information.
+                </label>
+
+                <small class="error-message" id="consentError"></small>
+            </div>
+            <button type="submit" class="btn btn-primary submit-button">
+                Submit my answers →
+            </button>
+
+            <p id="formMessage" class="form-message" role="status"></p>
+
+            <p class="form-note">
+                * Required fields. This educational demonstration does not store or transmit your personal information.
+            </p>
+        </form>
+    </main>
+    <footer>
+    <a href="index.html" class="logo">CYBER<span>SAFE.</span></a>
+    <p>Stay informed. Stay protected.</p>
+    <!-- just to flex -->
+    <p id="currentDate"></p> 
+    <div class="footer-bottom">
+      <p>&copy; 2026 CyberSafe. All rights reserved.</p>
+      <a class="github" href="https://github.com/lena-bel" target="_blank"
+        >my github</a
+      >
+    </div>
+  </footer>
+   <script src="form-script.js"></script>
+</body>
+</html>
